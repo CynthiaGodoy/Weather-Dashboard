@@ -2,9 +2,17 @@
 
 ## Project Description
 
-Build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS from scratch. App should resemble the PNG image given. 
+Build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS from scratch. It needs to resemble the image given.
 
-![](images/06-server-side-apis-homework-demo.png)
+## What is Used
+    * Bootstrap
+    * style.css
+    * index.html
+    * script.js
+    * JQuery
+    * Moment.js
+    * OpenWeather One Call API
+    * AJAX
 
 ## Main Objective
 
@@ -18,9 +26,9 @@ Use `localStorage` to store any persistent data. For assistance refer to
 
 ✅ Create a weather app with a form input to search for a specific city.
 
-✅ When a specific city is searched it is then saved on the Local storage and will be saved under the search history.
+✅ When a specific city is searched it is then saved on the Local Storage and will be saved under the search history.
 
-✅ When a specific city and a date is entered an icon, teperature, humidity, wind speed and UV index will be displayed.
+✅ When a specific city and a date is entered an icon, temperature, humidity, wind speed and UV index will be displayed.
 
 ✅ When the UV index is viewed a color will indicate whether the conditions are favorable, moderate, or severe.
 

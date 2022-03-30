@@ -1,0 +1,23 @@
+body {
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+#search-city-button:hover, #clear-history:hover { /*MAKE HOVER SAME AS GRADIENT COLOR*/
+    background-color: #13547a;
+}
+
+.card {
+    background-color: whitesmoke;
+}
+
+.btn-custom-1 { /*MAKE BUTTON SAME COLOR AS GRADIENT*/
+    background-color: #80d0c7; 
+    }
+
+.bg-custom-2 { /*GRADIENT AT TITLE*/
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    }
