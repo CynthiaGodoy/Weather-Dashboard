@@ -18,3 +18,24 @@ var APIkey = "2e985842de3879dadd49c9909fe5946c" //ALLOWS ACCESS TO API - SIGN IN
 
 var cityList = []; //ACCESS THE DATA
 
+var currentDate = moment().format("L");
+$("#current-date").text("(" + currentDate + ")");
+
+initializeHistory();
+showClear();
+
+$(document).on("submit", function() {
+event.preventDefault();
+
+var searchValue = searchCityInput.val().trim();
+currentConditionsRequest (searchValue)
+searchHistory(searchValue);
+searchCityInput.val("");
+});
+
+searchCityButton.on("click", function(event)) {
+    event.preventDefault() {
+
+    }
+}
+

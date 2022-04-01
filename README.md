@@ -26,7 +26,7 @@ Use `localStorage` to store any persistent data. For assistance refer to
 
 ✅ Create a weather app with a form input to search for a specific city.
 
-✅ When a specific city is searched it is then saved on the Local Storage and will be saved under the search history.
+✅ When a specific city is searched it is then saved on the `Local Storage` and will be saved under the search history.
 
 ✅ When a specific city and a date is entered an icon, temperature, humidity, wind speed and UV index will be displayed.
 
