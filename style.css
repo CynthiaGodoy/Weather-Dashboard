@@ -1,23 +1,52 @@
-body {
+body, .container-fluid {
     height: 100%;
 }
 
-.hide {
-    display: none;
-}
-
-#search-city-button:hover, #clear-history:hover { /*MAKE HOVER SAME AS GRADIENT COLOR*/
-    background-color: #13547a;
+#search-city-button:hover, #clear-history:hover, .btn-custom-1:hover { /*MAKE HOVER SAME AS GRADIENT COLOR*/
+    background-color: #80d0c7;
 }
 
 .card {
     background-color: whitesmoke;
 }
 
-.btn-custom-1 { /*MAKE BUTTON SAME COLOR AS GRADIENT*/
-    background-color: #80d0c7; 
-    }
+.btn-custom-1 { /* MAKE BUTTON SAME COLOR AS GRADIENT */
+    background-color: #13547a; 
+} 
 
-.bg-custom-2 { /*GRADIENT AT TITLE*/
+.bg-custom-2, .bg-custom-3 { /*GRADIENT AT TITLE & FORECAST BOXES & UV BOX*/
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-    }
+}
+
+/* COLORS FOR UV INDEX */
+#uv-index {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.orange {
+    background: orangered;
+}
+
+.red {
+    background: red;
+}
+
+.violet {
+    background: violet;
+}
+
+.col-20 {
+    width: 20%;
+    float: left;
+}

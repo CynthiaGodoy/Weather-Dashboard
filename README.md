@@ -14,10 +14,19 @@ Build a weather dashboard that will run in the browser and feature dynamically u
     * OpenWeather One Call API
     * AJAX
 
-## Main Objective
+## API Calls
 
-Use a third party API below to retrieve weather data for cities.
+API with Built-in GeoCoding for Cities to retrieve current weather.
+[OpenWeather Current Weather](https://openweathermap.org/current)
+
+API with Built-in GeoCoding for Cities to retrieve 5-day forecast.
+[OpenWeather Five-Day Forecast](https://openweathermap.org/forecast5)
+
+API below to retrieve UVIndex - Must use Lat/Long
 [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) 
+
+API Icons
+[OpenWeather Icons](https://openweathermap.org/weather-conditions#How-to-get-icon-URL)
 
 Use `localStorage` to store any persistent data. For assistance refer to
 [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
