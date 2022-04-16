@@ -81,7 +81,7 @@ $.ajax({
   method:"GET"
 }).then(function (response) {
   var uvIndex = response.current.uvi; //VARIABLE TO GRAB CURRENT UVI
-  if (uvIndex < 2) {
+  if (uvIndex < 2) { //IF ELSE TO INDICATE A COLOR BASED ON VALUE
     $("#uv-index").addClass("green")
   } else if (uvIndex < 5) {
     $("#uv-index").addClass("yellow")
@@ -108,15 +108,15 @@ var date= new Date((response.list[((i+1)*8)-1].dt)*1000).toLocaleDateString();
 var iconcode= response.list[((i+1)*8)-1].weather[0].icon;
 var iconurl="https://openweathermap.org/img/wn/"+iconcode+".png";
 var tempK= response.list[((i+1)*8)-1].main.temp;
-var tempF=(((tempK-273.5)*1.80)+32).toFixed(2);
+var tempF=(((tempK-273.5)*1.80)+32).toFixed(2); //CHANGE TO FARENHEIGHT
 var humidity= response.list[((i+1)*8)-1].main.humidity;
+var wind= response.wind_speed; //WINDSPEED METERS PER SECOND PULLED FROM API
+var windS=(wind*2.237).toFixed(1); //CONVERT MILES PER HOUR
 $("#futureDate"+i).html(date);
 $("#futureIcon"+i).html("<img src="+iconurl+">");
 $("#futureTemp"+i).html(tempF+"&#8457");
-$("#futureHumidity"+i).html(humidity+"%");
-// var wspeed=forecast.windSpeed.mps; //WINDSPEED METERS PER SECOND
-// var winds=(wspeed*2.237).toFixed(1); //CONVERT MILES PER HOUR
-// $("#futureWindS"+i).html(winds+" MPH");
+$("#futureHumidity"+i).html(humidity+"%"); 
+$("#futureWindS"+i).html(windS+" MPH");
 }
 });
 }

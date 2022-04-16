@@ -48,8 +48,9 @@ Use `localStorage` to store any persistent data. For assistance refer to
 ## Live URL
 https://cynthiagodoy.github.io/Weather-Dashboard/
 
-## Screenshot
+## Screenshots
 ![](images/Dashboard.PNG)
+![](images/Dashboard2.PNG)
 
 - - -
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
