@@ -79,9 +79,9 @@ function uvIndex(lon,lat){ //FUNCTION TO RETURN UVINDEX
 $.ajax({
   url:uvqURL,
   method:"GET"
-}).then(function (response) {
-  var uvIndex = response.current.uvi; //VARIABLE TO GRAB CURRENT UVI
-  if (uvIndex < 2) { //IF ELSE TO INDICATE A COLOR BASED ON VALUE
+}).then(function (response) { //VARIABLE TO GRAB CURRENT UVI. IF ELSE TO INDICATE A COLOR BASED ON VALUE
+  var uvIndex = response.current.uvi; 
+  if (uvIndex < 2) {
     $("#uv-index").addClass("green")
   } else if (uvIndex < 5) {
     $("#uv-index").addClass("yellow")
@@ -104,13 +104,13 @@ $.ajax({
   method:"GET"
 }).then(function(response){
 for (i=0;i<5;i++){
-var date= new Date((response.list[((i+1)*8)-1].dt)*1000).toLocaleDateString();
+var date= new Date((response.list[((i+1)*8)-1].dt)*1000).toLocaleDateString(); 
 var iconcode= response.list[((i+1)*8)-1].weather[0].icon;
 var iconurl="https://openweathermap.org/img/wn/"+iconcode+".png";
 var tempK= response.list[((i+1)*8)-1].main.temp;
 var tempF=(((tempK-273.5)*1.80)+32).toFixed(2); //CHANGE TO FARENHEIGHT
 var humidity= response.list[((i+1)*8)-1].main.humidity;
-var wind= response.wind_speed; //WINDSPEED METERS PER SECOND PULLED FROM API
+var wind= response.list[((i+1)*8)-1].wind.speed; //WINDSPEED METERS PER SECOND PULLED FROM API
 var windS=(wind*2.237).toFixed(1); //CONVERT MILES PER HOUR
 $("#futureDate"+i).html(date);
 $("#futureIcon"+i).html("<img src="+iconurl+">");
@@ -136,7 +136,7 @@ function pastSearch(event){ //DISPLAY PAST SEARCH WHEN ITEM IS CLICKED IN SEARCH
 }
 }
 
-function loadlastCity(){ // RENDER FUNCTION
+function loadlastCity(){ // RENDER FUNCTION OF CITY SEARCH FROM STORAGE
   $("ul").empty();
   var storageCity = JSON.parse(localStorage.getItem("cityname"));
   if(storageCity!==null){
