@@ -45,8 +45,3 @@ body, .container-fluid {
 .violet {
     background: violet;
 }
-
-.col-20 {
-    width: 20%;
-    float: left;
-}

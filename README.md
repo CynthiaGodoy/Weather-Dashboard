@@ -10,8 +10,7 @@ Build a weather dashboard that will run in the browser and feature dynamically u
     * index.html
     * script.js
     * JQuery
-    * Moment.js
-    * OpenWeather One Call API
+    * (x3) API's
     * AJAX
 
 ## API Calls
