@@ -52,4 +52,5 @@ https://cynthiagodoy.github.io/Weather-Dashboard/
 ![](images/Dashboard2.PNG)
 
 - - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+License: MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
